@@ -13,7 +13,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./cjs/react-dom.production.min.js":"i17t"}],"vKFU":[function(require,module,exports) {
 
 },{}],"G4yH":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("react"));function t(e){return e&&e.__esModule?e:{default:e}}var r=function(){return e.default.createElement("div",{className:" w-32 h-32 rounded-full bg-green-500 flex justify-center items-center"},e.default.createElement("span",{className:""},"Chat"))},a=r;exports.default=a;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("react"));function t(e){return e&&e.__esModule?e:{default:e}}var r=function(){return e.default.createElement("div",{className:" w-20 h-20 rounded-full bg-green-500 flex justify-center items-center"},e.default.createElement("span",{className:""},"Chat"))},a=r;exports.default=a;
 },{"react":"n8MK"}],"lY9v":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=r(require("react")),t=r(require("./Component/Widget"));function r(e){return e&&e.__esModule?e:{default:e}}function u(){return e.default.createElement("div",{className:"App"},e.default.createElement(t.default,null))}var a=u;exports.default=a;
 },{"react":"n8MK","./Component/Widget":"G4yH"}],"Focm":[function(require,module,exports) {
