@@ -97,12 +97,6 @@ var __yieldStar = (value) => {
   }, "return" in obj && method("return"), it;
 };
 var __forAwait = (obj, it, method) => (it = obj[__knownSymbol("asyncIterator")]) ? it.call(obj) : (obj = obj[__knownSymbol("iterator")](), it = {}, method = (key, fn) => (fn = obj[key]) && (it[key] = (arg) => new Promise((yes, no, done) => (arg = fn.call(obj, arg), done = arg.done, Promise.resolve(arg.value).then((value) => yes({ value, done }), no)))), method("next"), method("return"), it);
-var _a;
-if (typeof window !== "undefined") {
-  window.initLiveChatWidget = ((_a = window.LiveChatWidget) == null ? void 0 : _a.initLiveChatWidget) || function() {
-    console.error("LiveChatWidget not properly loaded");
-  };
-}
 import * as React from "react";
 import React__default, { useState, useEffect, useLayoutEffect, useRef, forwardRef, useCallback, Fragment, isValidElement, cloneElement, createElement as createElement$1, useContext, createContext, useMemo } from "react";
 import ReactDOM from "react-dom";
@@ -11635,7 +11629,7 @@ function C$1({ ourProps: n2, theirProps: r2, slot: e, defaultTag: a, features: s
   if (t2) return F(o3, e, a, l2, i2);
   let y2 = s2 != null ? s2 : 0;
   if (y2 & 2) {
-    let _a2 = o3, { static: f2 = false } = _a2, u2 = __objRest(_a2, ["static"]);
+    let _a = o3, { static: f2 = false } = _a, u2 = __objRest(_a, ["static"]);
     if (f2) return F(u2, e, a, l2, i2);
   }
   if (y2 & 1) {
@@ -11649,7 +11643,7 @@ function C$1({ ourProps: n2, theirProps: r2, slot: e, defaultTag: a, features: s
   return F(o3, e, a, l2, i2);
 }
 function F(n2, r2 = {}, e, a, s2) {
-  let _a2 = h(n2, ["unmount", "static"]), { as: t2 = e, children: l2, refName: i2 = "ref" } = _a2, o3 = __objRest(_a2, ["as", "children", "refName"]), y2 = n2.ref !== void 0 ? { [i2]: n2.ref } : {}, f2 = typeof l2 == "function" ? l2(r2) : l2;
+  let _a = h(n2, ["unmount", "static"]), { as: t2 = e, children: l2, refName: i2 = "ref" } = _a, o3 = __objRest(_a, ["as", "children", "refName"]), y2 = n2.ref !== void 0 ? { [i2]: n2.ref } : {}, f2 = typeof l2 == "function" ? l2(r2) : l2;
   "className" in o3 && o3.className && typeof o3.className == "function" && (o3.className = o3.className(r2)), o3["aria-labelledby"] && o3["aria-labelledby"] === o3.id && (o3["aria-labelledby"] = void 0);
   let u2 = {};
   if (r2) {
@@ -11874,7 +11868,7 @@ function Te(e, t2) {
 let de = Fragment, fe = O.RenderStrategy;
 function Ae(e, t2) {
   var ee, te;
-  let _a2 = e, { transition: n2 = true, beforeEnter: l$1, afterEnter: S2, beforeLeave: R$1, afterLeave: d2, enter: y$1, enterFrom: C2, enterTo: p2, entered: h2, leave: g2, leaveFrom: v, leaveTo: o3 } = _a2, i$12 = __objRest(_a2, ["transition", "beforeEnter", "afterEnter", "beforeLeave", "afterLeave", "enter", "enterFrom", "enterTo", "entered", "leave", "leaveFrom", "leaveTo"]), [a, s2] = useState(null), r2 = useRef(null), f2 = ue(e), j2 = y(...f2 ? [r2, t2, s2] : t2 === null ? [] : [t2]), H2 = (ee = i$12.unmount) == null || ee ? A$1.Unmount : A$1.Hidden, { show: u2, appear: z, initial: K2 } = De(), [m$12, G2] = useState(u2 ? "visible" : "hidden"), Q = He(), { register: A2, unregister: I } = Q;
+  let _a = e, { transition: n2 = true, beforeEnter: l$1, afterEnter: S2, beforeLeave: R$1, afterLeave: d2, enter: y$1, enterFrom: C2, enterTo: p2, entered: h2, leave: g2, leaveFrom: v, leaveTo: o3 } = _a, i$12 = __objRest(_a, ["transition", "beforeEnter", "afterEnter", "beforeLeave", "afterLeave", "enter", "enterFrom", "enterTo", "entered", "leave", "leaveFrom", "leaveTo"]), [a, s2] = useState(null), r2 = useRef(null), f2 = ue(e), j2 = y(...f2 ? [r2, t2, s2] : t2 === null ? [] : [t2]), H2 = (ee = i$12.unmount) == null || ee ? A$1.Unmount : A$1.Hidden, { show: u2, appear: z, initial: K2 } = De(), [m$12, G2] = useState(u2 ? "visible" : "hidden"), Q = He(), { register: A2, unregister: I } = Q;
   n$1(() => A2(r2), [A2, r2]), n$1(() => {
     if (H2 === A$1.Hidden && r2.current) {
       if (u2 && m$12 !== "visible") {
@@ -11911,7 +11905,7 @@ function Ae(e, t2) {
   return React__default.createElement(M.Provider, { value: L2 }, React__default.createElement(c, { value: N }, he({ ourProps: Ce, theirProps: i$12, defaultTag: de, features: fe, visible: m$12 === "visible", name: "Transition.Child" })));
 }
 function Ie(e, t2) {
-  let _a2 = e, { show: n2, appear: l$1 = false, unmount: S2 = true } = _a2, R2 = __objRest(_a2, ["show", "appear", "unmount"]), d2 = useRef(null), y$1 = ue(e), C2 = y(...y$1 ? [d2, t2] : t2 === null ? [] : [t2]);
+  let _a = e, { show: n2, appear: l$1 = false, unmount: S2 = true } = _a, R2 = __objRest(_a, ["show", "appear", "unmount"]), d2 = useRef(null), y$1 = ue(e), C2 = y(...y$1 ? [d2, t2] : t2 === null ? [] : [t2]);
   l();
   let p2 = u();
   if (n2 === void 0 && p2 !== null && (n2 = (p2 & i.Open) === i.Open), n2 === void 0) throw new Error("A <Transition /> is used but it is missing a `show={true | false}` prop.");
@@ -18048,6 +18042,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 if (typeof window !== "undefined") {
   window.initLiveChatWidget = initLiveChatWidget;
+}
+if (typeof window !== "undefined" && window.LiveChatWidget) {
+  window.initLiveChatWidget = window.LiveChatWidget.initLiveChatWidget;
 }
 export {
   initLiveChatWidget
