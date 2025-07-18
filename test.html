@@ -35,6 +35,19 @@
             border: 1px solid #f5c6cb;
         }
     </style>
+
+<div id="widget-container"></div>
+<script src="https://anishpradhan.github.io/chat-widget/live-chat-widget.umd.cjs"></script>
+<script>
+  window.addEventListener('load', function () {
+    if (typeof window.initLiveChatWidget === 'function') {
+      window.initLiveChatWidget({
+        container: '#widget-container',
+        tenantUUID: '20e89e37-822e-4478-b497-0a9a2bbcbd58',
+      });
+    }
+  });
+</script>
 </head>
 <body>
     <div class="test-container">
@@ -60,24 +73,7 @@
     </div>
 
     
-    
-    <!-- Widget container -->
-    <div id="widget-container"></div>
-
-    <!-- Load the widget UMD bundle -->
-    <script src="https://anishpradhan.github.io/chat-widget/live-chat-widget.umd.cjs"></script>
-    <script>
-      window.addEventListener('load', function () {
-        var status = document.getElementById('status');
-        if (typeof window.initLiveChatWidget === 'function') {
-          // Initialize the widget (pass options as needed)
-          window.initLiveChatWidget({
-            container: '#widget-container',
-            tenantUUID: 'b1bc137d-7777-441a-b231-1ecc5ac3b417',
-           
-          });
-        }
-      });
-    </script>
+   
+  
 </body>
 </html> 
