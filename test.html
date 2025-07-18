@@ -59,6 +59,8 @@
         </div>
     </div>
 
+    
+    
     <!-- Widget container -->
     <div id="widget-container"></div>
 
@@ -68,21 +70,12 @@
       window.addEventListener('load', function () {
         var status = document.getElementById('status');
         if (typeof window.initLiveChatWidget === 'function') {
-          status.innerHTML += '<div class="success">✅ Widget function available!</div>';
           // Initialize the widget (pass options as needed)
           window.initLiveChatWidget({
             container: '#widget-container',
-            apiUrl: 'http://localhost:8000',
-            socketUrl: 'ws://localhost:8000/ws/chat',
-            tenantUrl: 'http://localhost:8000',
-            position: 'bottom-right',
-            theme: 'blue',
-            title: 'Chat With Us',
-            subtitle: 'We usually reply in 5 minutes',
-            autoOpen: false
+            tenantUUID: 'b1bc137d-7777-441a-b231-1ecc5ac3b417',
+           
           });
-        } else {
-          status.innerHTML += '<div class="error">❌ Widget function not found on window object</div>';
         }
       });
     </script>
